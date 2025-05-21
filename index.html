@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+   
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merry Christmas Landing Page | Codehal</title>
+    <title>weather app</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="#">Home<span></span></a>
-            <a href="#">About<span></span></a>
-            <a href="#">Gifts<span></span></a>
-            <a href="#">Services<span></span></a>
-            <a href="#">Contact<span></span></a>
-        </nav>
-    </header>
-    <div class="text">
-        <h1>Merry<br>Christmas</h1>
-    </div>
+
+    <div class="container">
+        <div class="wrapper"><!--A wrapper that divides the layout into sections.-->
+          <div class="img_section">
+            <div class="default_info">
+              <h2 class="default_day">Sunday</h2>
+              <span class="default_date">18 September 2023 </span>
+              <div class="icons">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="" />
+                <h2 class="weather_temp">22°C</h2>
+                <h3 class="cloudtxt">Overcast Clouds</h3>
+              </div>
+            </div>
+          </div>
+          <div class="content_section"><!--Section for search form and weather details.-->
+            <form>
+              <input
+                type="text"
+                placeholder="Search Location"
+                class="input_field"
+              />
+              <button type="submit" class="btn_search">Search</button>
+            </form>
+
+            <div class="day_info">
+              <div class="content">
+                <p class="title">NAME</p>
+                <span class="value">United Kingdom</span>
+              </div>
+              <div class="content">
+                <p class="title">TEMP</p>
+                <span class="value">23°C</span>
+              </div>
+              <div class="content">
+                <p class="title">HUMIDITY</p>
+                <span class="value">2%</span>
+              </div>
+              <div class="content">
+                <p class="title">WIND SPEED</p>
+                <span class="value">2.92 Km/h</span>
+              </div>
+            </div>
+
+            <div class="list_content">
+              <ul>
+                <li>
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+                  <span>Sat</span>
+                  <span class="day_temp">23°C</span>
+                </li>
+                <li>
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+                  <span>Sun</span>
+                  <span class="day_temp">21°C</span>
+                </li>
+                <li>
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+                  <span>Mon</span>
+                  <span class="day_temp">24°C</span>
+                </li>
+                <li>
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" />
+                  <span>Tus</span>
+                  <span class="day_temp">23°C</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <script src="script.js"></script><!--Links to an external JavaScript file -->
 </body>
 </html>
